@@ -1,0 +1,19 @@
+@import "variables.css";
+
+.label-body-regular {
+  font-size: 0.875rem;
+  font-family: OutfitRegular;
+}
+
+.label-cta {
+  font-size: 1rem;
+  font-family: OutfitRegular;
+}
+
+.text-green {
+  color: var(--green-base);
+}
+
+.text-white {
+  color: var(--green-base);
+}

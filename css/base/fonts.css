@@ -1,0 +1,24 @@
+@font-face {
+  font-family: OutfitBlack;
+  src: url(../../fonts/Outfit-Black.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: OutfitSemiBold;
+  src: url(../../fonts/Outfit-SemiBold.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: OutfitMedium;
+  src: url(../../fonts/Outfit-Medium.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: OutfitRegular;
+  src: url(../../fonts/Outfit-Regular.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: OutfitLight;
+  src: url(../../fonts/Outfit-Light.woff2) format("woff2");
+}

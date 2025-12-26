@@ -1,0 +1,6 @@
+.btn-primary {
+  height: 54px;
+  width: 195px;
+  display: flex;
+  place-content: center;
+}
