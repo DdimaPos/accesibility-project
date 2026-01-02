@@ -1,0 +1,212 @@
+.contact__container {
+  background-color: var(--green-light);
+  padding: 5rem 0 7.5rem 0;
+}
+
+.contact {
+  display: flex;
+  border-radius: 12px;
+  height: 40rem;
+  width: 100%;
+  background-color: var(--white);
+}
+
+.contact__data {
+  border-radius: 12px;
+  padding: 2.625rem;
+  width: 30%;
+  background-image: url(../../img/plants/contactUsPlant.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}
+
+.contact__title {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  font-family: OutfitSemibold;
+}
+
+.contact__text {
+  font-size: 0.875rem;
+  margin-bottom: 3.5rem;
+}
+
+.contact__list {
+  display: flex;
+  flex-direction: column;
+  gap: 19px;
+}
+
+.contact__items {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+
+  a {
+    color: var(--black)
+  }
+}
+
+.contact__links {
+  display: flex;
+  justify-content: space-between;
+  width: 10.5rem;
+  margin-top: 100%;
+}
+
+.contact__form {
+  width: 80%;
+  padding: 3rem 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.625rem;
+
+  button {
+    align-self: self-end;
+  }
+}
+
+.contact__form__texts {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 1rem;
+}
+
+.contact__form__input {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.contact__form__input label {
+  font-size: 0.875rem;
+}
+
+.contact__form__input input[type=text],
+.contact__form__input input[type=email],
+.contact__form__input textarea {
+  border: 1px solid var(--black);
+  outline: 1px solid transparent;
+  border-radius: 3px;
+  background-color: var(--white);
+  padding: .75rem .5rem;
+
+  &:focus {
+    border: 1px solid var(--green-base);
+    outline: 1px solid var(--green-base);
+  }
+}
+
+.contact__form__input__phone {
+  border: 1px solid var(--black);
+  outline: 1px solid transparent;
+  border-radius: 3px;
+  background-color: var(--white);
+  padding: .75rem .5rem;
+  display: flex;
+  gap: .5rem;
+
+  &:focus {
+    border: 1px solid var(--green-base);
+    outline: 1px solid var(--green-base);
+  }
+
+  & select {
+    font-family: OutfitRegular;
+  }
+}
+
+.contact__form__input:has(input[required]) label:before {
+  content: "*";
+  color: red;
+}
+
+.contact__form__specialty {
+  display: flex;
+  justify-content: space-between;
+
+  & input {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+
+    &:checked+label:before {
+      border: 2px solid var(--green-base);
+      background-color: var(--green-base);
+      box-shadow: inset 0 0 0 2px var(--white);
+    }
+
+    &:focus-visible+label {
+      outline: 3px solid #93c5fd;
+      outline-offset: 2px;
+    }
+  }
+
+  & label {
+    cursor: pointer;
+  }
+
+  & label:before {
+    content: '';
+    background: var(--white);
+    border-radius: 100%;
+    border: 2px solid var(--black);
+    display: inline-block;
+    width: 1.2em;
+    height: 1.2em;
+    position: relative;
+    top: -0.1em;
+    margin-right: 0.5rem;
+    vertical-align: top;
+    cursor: pointer;
+    text-align: center;
+    transition: all 250ms ease;
+    user-select: none;
+  }
+}
+
+.contact__form__input__message {
+  height: 6.5rem;
+  resize: none;
+}
+
+.contact__form__policy {
+  display: flex;
+  gap: 1rem;
+}
+
+.contact__policy__label {
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  &::before {
+    content: '';
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    background-color: var(--white);
+    border: 2px solid grey;
+    border-radius: 2px;
+  }
+
+  &:has(input:checked)::before {
+    background-color: var(--green-base);
+    border: 2px solid var(--green-base);
+  }
+
+  &:has(input:focus-visible) {
+    outline: 3px solid #93c5fd;
+    outline-offset: 2px;
+  }
+
+  input {
+    opacity: 0;
+    position: absolute;
+    pointer-events: none;
+  }
+}

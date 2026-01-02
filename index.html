@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <title>
@@ -11,9 +11,9 @@
 <body>
 
   <header class="header wrapper">
-    <nav class="nav">
+    <nav class="nav" aria-label="Header navigation">
       <div class="logo">
-        <img src="img/Logo.png" alt="">
+        <img src="img/Logo.png" alt="Website logo">
       </div>
       <ul class="nav__list">
         <li class="nav__item">
@@ -33,28 +33,30 @@
         </li>
 
         <li class="nav__menu">
-          <button class="nav__link">
-            <span class="nav__link">Lang</span>
-            <svg class="menu-icon" width="10" height="6" viewBox="0 0 10 6" fill="none"
-              xmlns="http://www.w3.org/2000/svg">
+          <button aria-expanded="false" class="nav__link" aria-controls="language-menu">
+            <span>Lang</span>
+            <svg aria-hidden="true" focusable="false" class="menu-icon" width="10" height="6" viewBox="0 0 10 6"
+              fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M8.75 0.75L4.75 4.75L0.75 0.75" stroke="#111111" stroke-width="1.5" stroke-linecap="round"
                 stroke-linejoin="round" />
             </svg>
           </button>
-          <div class="nav__sublist label-semibold">
-            <a href="#" class="nav__sublist-item label-semibold">Eng</a>
-            <a href="#" class="nav__sublist-item label-semibold">Rus</a>
-            <a href="#" class="nav__sublist-item label-semibold">Ro</a>
-            <a href="#" class="nav__sublist-item label-semibold">Fr</a>
-          </div>
+          <ul id="language-menu" class="nav__sublist label-semibold">
+            <li><a href="#" class="nav__sublist-item label-semibold">Eng</a></li>
+            <li><a href="#" class="nav__sublist-item label-semibold">Rus</a></li>
+            <li><a href="#" class="nav__sublist-item label-semibold">Ro</a> </li>
+            <li><a href="#" class="nav__sublist-item label-semibold">Fr</a> </li>
+          </ul>
         </li>
       </ul>
     </nav>
 
     <div class="search">
-      <input class="search__input" type="text" placeholder="Search this site">
-      <button class="search__button">
-        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <input aria-label="Search this site" id="search-input" class="search__input" type="text"
+        placeholder="Search this site">
+      <button aria-label="Search" class="search__button">
+        <svg aria-hidden="true" focusable="false" width="32" height="32" viewBox="0 0 32 32" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
           <path
             d="M25.5 25.5L21.014 21.006L25.5 25.5ZM23.5 15C23.5 17.2543 22.6045 19.4163 21.0104 21.0104C19.4163 22.6045 17.2543 23.5 15 23.5C12.7457 23.5 10.5837 22.6045 8.98959 21.0104C7.39553 19.4163 6.5 17.2543 6.5 15C6.5 12.7457 7.39553 10.5837 8.98959 8.98959C10.5837 7.39553 12.7457 6.5 15 6.5C17.2543 6.5 19.4163 7.39553 21.0104 8.98959C22.6045 10.5837 23.5 12.7457 23.5 15V15Z"
             stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
@@ -63,11 +65,247 @@
     </div>
   </header>
   <main>
-    <section class="hero wrapper">
+    <section class="hero__container">
+      <div class="hero wrapper">
+        <div class="hero__left">
+          <h1 class="hero__title">Lorem ipsum dolor sit amet.</h1>
+          <div class="hero__text">
+            <h2 class="hero__subtitle">Lorem ipsum dolor sit amet.</h2>
+            <p class="hero__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit aut culpa,
+              debitis
+              placeat eius minus ex rem dolorum illo quibusdam doloremque neque impedit nihil dolorem nam voluptatem
+              dignissimos et fugiat.
+            </p>
+          </div>
+          <button class="btn-primary">Buy Now</button>
+        </div>
+        <div class="hero__right"><img src="img/plants/heroPlant.jpg" alt="Hero section plant" class="hero__img"></div>
+      </div>
+    </section>
 
+    <section class="about wrapper">
+      <div class="about__card">
+        <div class="about__img__container">
+          <img src="img/plants/aboutUsPlant.jpg" alt="About us 1 plant" class="about__img">
+        </div>
+        <article class="about__text">
+          <h3 class="about__title">Lorem ipsum dolor sit amet.</h3>
+          <p class="about__description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse neque doloremque
+            autem ea natus consectetur repellat architecto, magni ullam ducimus voluptatem eaque aperiam odio saepe?
+            Illo ullam ex corporis inventore.
+            Repudiandae molestiae similique minima dolorem, facere ipsam iure fugiat sit sequi consequatur odio
+            praesentium perferendis qui! Tempora quae error dicta. Omnis dignissimos magni natus, deleniti culpa non
+            consequatur voluptatibus commodi!
+            Fuga tenetur officia tempora quae voluptas sit quibusdam soluta architecto quam sapiente, natus totam
+            dolore.</p>
+          <a href="" class="about__link">Learn more about</a>
+        </article>
+      </div>
+      <div class="about__card">
+        <div class="about__img__container">
+          <img src="img/plants/aboutUsPlant.jpg" alt="About us 1 plant" class="about__img">
+        </div>
+        <article class="about__text">
+          <h3 class="about__title">Lorem ipsum dolor sit amet.</h3>
+          <p class="about__description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse neque doloremque
+            autem ea natus consectetur repellat architecto, magni ullam ducimus voluptatem eaque aperiam odio saepe?
+            Illo ullam ex corporis inventore.
+            Repudiandae molestiae similique minima dolorem, facere ipsam iure fugiat sit sequi consequatur odio
+            praesentium perferendis qui! Tempora quae error dicta. Omnis dignissimos magni natus, deleniti culpa non
+            consequatur voluptatibus commodi!
+            ratione molestiae enim, voluptate maxime ducimus ipsa qui facere impedit iure et ipsam? Rerum, asperiores
+            dolore.</p>
+          <a href="" class="about__link">Learn more about</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="contact__container">
+      <div class="contact wrapper">
+        <div class="contact__data">
+          <h2 class="contact__title">Contact Us</h2>
+          <p class="contact__text">
+            Fill up the form and ur Team will get back to you within 24 hours. Happy to see your
+            message!</p>
+          <ul class="contact__list">
+            <li class="contact__items">
+              <svg aria-hidden="true" focusable="false" width="21" height="21" viewBox="0 0 21 21" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M21 10.5643C21 4.72966 16.2992 0 10.5013 0C4.70079 0.00131234 0 4.72966 0 10.5656C0 15.8373 3.83989 20.2073 8.85827 21V13.6181H6.19422V10.5656H8.86089V8.23622C8.86089 5.58924 10.4291 4.1273 12.8268 4.1273C13.9764 4.1273 15.1772 4.33333 15.1772 4.33333V6.93176H13.853C12.5499 6.93176 12.143 7.74672 12.143 8.58268V10.5643H15.0538L14.5892 13.6168H12.1417V20.9987C17.1601 20.206 21 15.836 21 10.5643Z"
+                  fill="#111111" />
+              </svg>
+              <a aria-label="Phone number" href="">
+                +123 123 123
+              </a>
+            </li>
+            <li class="contact__items">
+              <svg aria-hidden="true" focusable="false" width="21" height="21" viewBox="0 0 21 21" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M21 10.5643C21 4.72966 16.2992 0 10.5013 0C4.70079 0.00131234 0 4.72966 0 10.5656C0 15.8373 3.83989 20.2073 8.85827 21V13.6181H6.19422V10.5656H8.86089V8.23622C8.86089 5.58924 10.4291 4.1273 12.8268 4.1273C13.9764 4.1273 15.1772 4.33333 15.1772 4.33333V6.93176H13.853C12.5499 6.93176 12.143 7.74672 12.143 8.58268V10.5643H15.0538L14.5892 13.6168H12.1417V20.9987C17.1601 20.206 21 15.836 21 10.5643Z"
+                  fill="#111111" />
+              </svg>
+              <a aria-label="Email address" href="">
+                exexex@googlemail.com
+              </a>
+            </li>
+            <li class="contact__items">
+              <svg aria-hidden="true" focusable="false" width="21" height="21" viewBox="0 0 21 21" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M21 10.5643C21 4.72966 16.2992 0 10.5013 0C4.70079 0.00131234 0 4.72966 0 10.5656C0 15.8373 3.83989 20.2073 8.85827 21V13.6181H6.19422V10.5656H8.86089V8.23622C8.86089 5.58924 10.4291 4.1273 12.8268 4.1273C13.9764 4.1273 15.1772 4.33333 15.1772 4.33333V6.93176H13.853C12.5499 6.93176 12.143 7.74672 12.143 8.58268V10.5643H15.0538L14.5892 13.6168H12.1417V20.9987C17.1601 20.206 21 15.836 21 10.5643Z"
+                  fill="#111111" />
+              </svg>
+              <a aria-label="Physical address" href="">
+                Asta la vista 32/5
+              </a>
+            </li>
+          </ul>
+
+          <ul class="contact__links">
+            <li>
+              <a aria-label="Facebook" href=""> <svg aria-hidden="true" focusable="false" width="21" height="21"
+                  viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M21 10.5643C21 4.72966 16.2992 0 10.5013 0C4.70079 0.00131234 0 4.72966 0 10.5656C0 15.8373 3.83989 20.2073 8.85827 21V13.6181H6.19422V10.5656H8.86089V8.23622C8.86089 5.58924 10.4291 4.1273 12.8268 4.1273C13.9764 4.1273 15.1772 4.33333 15.1772 4.33333V6.93176H13.853C12.5499 6.93176 12.143 7.74672 12.143 8.58268V10.5643H15.0538L14.5892 13.6168H12.1417V20.9987C17.1601 20.206 21 15.836 21 10.5643Z"
+                    fill="#111111" />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a aria-label="Facebook" href=""> <svg aria-hidden="true" focusable="false" width="21" height="21"
+                  viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M21 10.5643C21 4.72966 16.2992 0 10.5013 0C4.70079 0.00131234 0 4.72966 0 10.5656C0 15.8373 3.83989 20.2073 8.85827 21V13.6181H6.19422V10.5656H8.86089V8.23622C8.86089 5.58924 10.4291 4.1273 12.8268 4.1273C13.9764 4.1273 15.1772 4.33333 15.1772 4.33333V6.93176H13.853C12.5499 6.93176 12.143 7.74672 12.143 8.58268V10.5643H15.0538L14.5892 13.6168H12.1417V20.9987C17.1601 20.206 21 15.836 21 10.5643Z"
+                    fill="#111111" />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a aria-label="Facebook" href=""> <svg aria-hidden="true" focusable="false" width="21" height="21"
+                  viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M21 10.5643C21 4.72966 16.2992 0 10.5013 0C4.70079 0.00131234 0 4.72966 0 10.5656C0 15.8373 3.83989 20.2073 8.85827 21V13.6181H6.19422V10.5656H8.86089V8.23622C8.86089 5.58924 10.4291 4.1273 12.8268 4.1273C13.9764 4.1273 15.1772 4.33333 15.1772 4.33333V6.93176H13.853C12.5499 6.93176 12.143 7.74672 12.143 8.58268V10.5643H15.0538L14.5892 13.6168H12.1417V20.9987C17.1601 20.206 21 15.836 21 10.5643Z"
+                    fill="#111111" />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <form class="contact__form" action="">
+
+          <fieldset class="contact__form__texts">
+            <legend style="display: none;">Personal Information</legend>
+
+            <div class="contact__form__input">
+              <label for="first-name">First name</label>
+              <input type="text" id="first-name" placeholder="John" required>
+            </div>
+
+            <div class="contact__form__input">
+              <label for="last-name">Last name</label>
+              <input type="text" id="last-name" placeholder="Bruh">
+            </div>
+
+            <div class="contact__form__input">
+              <label for="email">Email</label>
+              <input type="email" id="email" placeholder="joemama@email.com" required>
+            </div>
+
+            <div class="contact__form__input">
+              <label for="phone-number">Phone number</label>
+              <div class="contact__form__input__phone">
+                <select aria-label="Country code" name="phone-number-locale" id="phone-number-locale">
+                  <option value="373">+373</option>
+                  <option value="388">+388</option>
+                  <option value="388">+388</option>
+                </select>
+                <input type="tel" id="phone-number" placeholder="00 000 000" required>
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset class="contact__form__specialty">
+            <legend style="display: none;">Preferred contact method</legend>
+            <input type="radio" id="contactChoice1" name="contact" value="email" />
+            <label for="contactChoice1">Email</label>
+
+            <input type="radio" id="contactChoice2" name="contact" value="phone" />
+            <label for="contactChoice2">Phone</label>
+
+            <input type="radio" id="contactChoice3" name="contact" value="mail" />
+            <label for="contactChoice3">Mail</label>
+
+            <input type="radio" id="contactChoice4" name="contact" value="letter" />
+            <label for="contactChoice4">Letter</label>
+
+            <input type="radio" id="contactChoice5" name="contact" value="other" />
+            <label for="contactChoice5">Other</label>
+
+          </fieldset>
+
+          <fieldset class="contact__form__input">
+            <label for="message">Message</label>
+            <textarea id="message" class="contact__form__input__message" placeholder="Text here..."></textarea>
+          </fieldset>
+
+          <fieldset class="contact__form__policy">
+            <legend style="display: none;">Agree to privacy policy</legend>
+            <label for="privacy1" class="contact__policy__label">
+              <input id="privacy1" type="checkbox">
+              Accept 1
+            </label>
+            <label for="privacy2" class="contact__policy__label">
+              <input id="privacy2" type="checkbox">
+              Accept 2
+            </label>
+          </fieldset>
+          <button type="submit" class="btn-primary">Send request</button>
+        </form>
+      </div>
     </section>
   </main>
-  <footer></footer>
+  <footer>
+    <section class="footer__info wrapper">
+      <div class="footer__left">
+        <h2 class="footer__title">PlantMe</h2>
+        <p class="footer__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium, in?</p>
+        <form action="" class="footer__input">
+          <input aria-label="Email" placeholder="eexexe@email.com" type="email" class="footer__search">
+          <button type="submit" class="btn-primary">Subscribe</button>
+        </form>
+      </div>
+      <div class="footer__center">
+        <nav aria-label="Footer navigation">
+
+          <ul class="footer__linklist">
+            <li class="footer__link"><a aria-label="About us" href="#">About us</a></li>
+            <li class="footer__link"><a aria-label="Contact us" href="#">Contact us</a></li>
+            <li class="footer__link"><a aria-label="Blog" href="#">Blog</a></li>
+            <li class="footer__link"><a aria-label="Site map" href="#">Site map</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="footer__right">
+        <p class="footer__contacts">Contacts</p>
+        <a aria-label="Phone number" href="tel:+3838383838" class="footer__phone">+38 3838 3838</a>
+        <a aria-label="Email address" href="mailto:eee@mail.com" class="footer__email">example@mail.com</a>
+        <ul class="sponsor__list">
+          <li>
+            <img width="50" height="29" src="img/Icons/visa.png" alt="Visa card icon">
+          </li>
+          <li>
+            <img width="50" height="41" src="img/Icons/mastercard.png" alt="mastercard icon">
+          </li>
+        </ul>
+      </div>
+    </section>
+    <hr class="footer__separator">
+    <section class="footer__copyright wrapper">
+      <span>© 2022 PlantMe. All Rights Reserved</span>
+    </section>
+  </footer>
   <script src="js/script.js"></script>
 </body>
 

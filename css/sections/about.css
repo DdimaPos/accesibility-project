@@ -1,0 +1,47 @@
+.about {
+  display: flex;
+  gap: 1.125rem;
+  padding: 5rem 0;
+}
+
+.about__card {
+  background-color: var(--green-base);
+  color: var(--white);
+  padding: 1.5rem;
+  padding-bottom: 35px;
+  display: flex;
+  gap: 1.125rem;
+  max-width: 50%;
+}
+
+.about__img__container {
+  width: 11.25rem;
+  height: 14.475rem;
+}
+
+.about__img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.about__title {
+  font-size: 1.125rem;
+  margin-bottom: 0.75rem;
+  font-family: OutfitSemibold;
+}
+
+.about__description {
+  font-size: 0.875rem;
+  margin-bottom: 23px;
+  font-family: OutfitRegular;
+}
+
+.about__link {
+  font-family: OutfitSemibold;
+  text-decoration: underline;
+  color: var(--white);
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
